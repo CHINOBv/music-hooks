@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 
-const Form = ({setInfo}) => {
-
+const Form = ({ consultAPIW }) => {
   const [Search, setSearch] = useState({
-    Artist:"",
-    Song: ""
+    Artist: "",
+    Song: "",
   });
 
   const updateSearch = (e) => {
     setSearch({
       ...Search,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const sendSearch = (e) => {
     e.preventDefault();
-    if(Search.Artist.trim() === "" || Search.Song.trim() === ""){
+    if (Search.Artist.trim() === "" || Search.Song.trim() === "") {
       alert("Ambos campos son Obligatorios");
       return;
     }
-    setInfo(Search);
-  }
+    consultAPIW(Search);
+  };
 
   return (
     <div className="bg-info">
       <div className="container">
         <div className="row">
-          <form className="col card text-white bg-transparent  mb-5 pt-5 pb-2"
+          <form
+            className="col card text-white bg-transparent  mb-5 pt-5 pb-2"
             onSubmit={sendSearch}
           >
             <fieldset>
