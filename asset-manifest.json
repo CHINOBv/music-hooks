@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/music-hooks/static/css/main.302f2234.chunk.css",
+    "main.js": "/music-hooks/static/js/main.6f913275.chunk.js",
+    "main.js.map": "/music-hooks/static/js/main.6f913275.chunk.js.map",
+    "runtime-main.js": "/music-hooks/static/js/runtime-main.8dfa42f1.js",
+    "runtime-main.js.map": "/music-hooks/static/js/runtime-main.8dfa42f1.js.map",
+    "static/js/2.31579fda.chunk.js": "/music-hooks/static/js/2.31579fda.chunk.js",
+    "static/js/2.31579fda.chunk.js.map": "/music-hooks/static/js/2.31579fda.chunk.js.map",
+    "index.html": "/music-hooks/index.html",
+    "precache-manifest.3bb04b77118fc6082b0c193397dc2b9f.js": "/music-hooks/precache-manifest.3bb04b77118fc6082b0c193397dc2b9f.js",
+    "service-worker.js": "/music-hooks/service-worker.js",
+    "static/css/main.302f2234.chunk.css.map": "/music-hooks/static/css/main.302f2234.chunk.css.map",
+    "static/js/2.31579fda.chunk.js.LICENSE.txt": "/music-hooks/static/js/2.31579fda.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8dfa42f1.js",
+    "static/js/2.31579fda.chunk.js",
+    "static/css/main.302f2234.chunk.css",
+    "static/js/main.6f913275.chunk.js"
+  ]
+}
