@@ -10,6 +10,7 @@ const App = () => {
   const [Word, setWord] = useState([]);
   const [Info, setInfo] = useState({});
 
+//Check the API to Get The song lyrics
   const consultAPIW = async (Search) => {
     const { Artist, Song } = Search;
     const res = await axios(`https://api.lyrics.ovh/v1/${Artist}/${Song}`);
@@ -19,11 +20,13 @@ const App = () => {
   };
 
   const consultInfoAPI = async () => {
-    let url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${Artist}`;
-    const res = await axios(url);
+    if(Artist){
+      let url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${Artist}`;
+      const res = await axios(url);
 
-    setInfo(res.data.artists[0]);
-    console.log(Info);
+      setInfo(res.data.artists[0]);
+      //console.log(Info);
+    }
   };
 
   useEffect(() => {
@@ -45,6 +48,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <footer>Create By: David Israel Moreno Resendez</footer>
     </>
   );
 };
